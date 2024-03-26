@@ -12,7 +12,96 @@
 	--mediumGray: #555;
 	--darkGray: #323131;
 	
-	--body-fonts: Verdana, Tahoma, sans-serif;
-	
+	--body-fonts: Verdana, Tahoma, sans-serif;	
 	
 }
+
+
+body{
+    color: var(--darkGray);
+    background-color: var(--darkBlue);
+	font-family: var(--body-fonts);
+	margin: 0;
+
+    
+}
+
+
+header {
+	background-color: var(--brightBlue);
+	width: 100%;
+    max-width: 1200px;
+	margin: 0 auto;	
+
+}
+
+header > a {
+    float: left;
+	text-decoration: none;
+}
+
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 0 0 2rem;
+    font-family: var(--body-fonts);
+    font-weight: bold;
+}
+
+a{
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+}
+
+nav{
+    float: right;
+    margin-right: 7.5rem;
+    margin-top: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 0.5rem;
+}
+
+
+
+main {
+	background-color: var(--brightBlue);
+	width: 100%;
+    max-width: 1200px;
+	margin: 0 auto;
+	clear: both;
+
+}
+footer{
+	background-color: var(--brightBlue);
+	width: 100%;
+    max-width: 1200px;
+	margin: 0 auto;
+}
+
