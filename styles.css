@@ -16,31 +16,23 @@
 	
 }
 
+html{
+    background-color: var(--darkBlue);
+}
 
 body{
-    color: var(--darkGray);
-    background-color: var(--darkBlue);
+    color: var(--white);
 	font-family: var(--body-fonts);
-	margin: 0;
-
-    
+	margin: 0 auto;
+    max-width: 1200px;  
+  
 }
-
 
 header {
-	background-color: var(--brightBlue);
-	width: 100%;
-    max-width: 1200px;
-	margin: 0 auto;	
+	margin: 0 auto;
+    background: linear-gradient(to right, var(--mediumBlue), var(--royalBlue), var(--navyBlue));	 
 
 }
-
-header > a {
-    float: left;
-	text-decoration: none;
-}
-
-
 
 img{
     display: block;
@@ -55,12 +47,24 @@ h1{
     margin: 1.25rem 0 0 2rem;
     font-family: var(--body-fonts);
     font-weight: bold;
+    text-decoration: none;
+}
+
+h1 a {
+    float: left;
+	text-decoration: none;
+}
+
+h1 a:hover{
+	background-color: var(--mulberryWood);
+	color:var(--skyBlue);  
 }
 
 a{
     display: block;
     padding: 1rem;
     color: var(--white);
+    
 }
 
 nav{
@@ -72,7 +76,7 @@ nav{
 nav ul{
     list-style-type: none;
     margin-left: 2rem;
-    padding: 0;
+    padding-left: 0;
 }
 
 nav li{
@@ -82,26 +86,103 @@ nav li{
 nav a{
     color: var(--white);
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 1.7rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 0 0.5rem;
+	
 }
 
+nav a:hover{
+	text-decoration: none;
+	background-color: var(--mulberryWood);
+	color: var(--skyBlue);
+}
 
+li img:hover{
+    background-color: var(--mulberryWood);
+	color: var(--skyBlue);
+}
 
 main {
-	background-color: var(--brightBlue);
-	width: 100%;
-    max-width: 1200px;
-	margin: 0 auto;
-	clear: both;
+	margin: 0 auto;	
+}
+
+#container{
+    display: grid;
 
 }
-footer{
-	background-color: var(--brightBlue);
-	width: 100%;
-    max-width: 1200px;
-	margin: 0 auto;
+
+.five-column-grid {
+    grid-column: 1 / span 5; 
+    grid-template-columns: repeat(5, 1fr); 
 }
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    } 
+
+
+
+#smoothJazz{
+    background: linear-gradient(to right, var(--mediumBlue), var(--royalBlue), var(--navyBlue), var(--darkBlue), black);
+    padding-left: 3rem;
+    margin-top: -1.1rem;
+    padding-top: .2rem;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+#smoothJazz h2{
+    font-family: var(--body-fonts);
+    font-size: 1.7rem;
+}
+
+#smoothJazz p{
+    
+    padding: 0 0 1rem 0;
+    font-family: var(--body-fonts);
+}
+
+#trendingSongs{
+    background-color: var(--white);
+    color: var(--mulberryWood);
+    margin-top: -1.1rem;
+    padding-top: .2rem;
+    
+    
+}
+
+#trendingSongs h3{
+    font-weight: 600; 
+}
+
+#yourPlaylist{
+    background-color: var(--brightBlue);
+    margin-top: -1.1rem;
+    padding-top: .2rem;
+}
+
+#curatedPlaylist{
+    background-color: var(--navyBlue);
+    margin-top: -1.1rem;
+    padding-top: .2rem;
+}
+
+footer{
+	margin: 0 auto;
+    background-color: var(--white);
+    color: var(--darkBlue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -1rem;
+}
+
+@media screen and (min-width: 834px){
+    
+}
+
+
+
 
