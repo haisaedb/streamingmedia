@@ -157,7 +157,7 @@ dd {
 
 #scrollBar section{
     margin: 0.5rem;
-    position: relative;
+    position: sticky;
      
 }
 
@@ -175,9 +175,10 @@ dd {
 }
 
 #playlist{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 834px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 
 #playlist h2{
@@ -192,9 +193,9 @@ dd {
 }
 
 #yourPlaylist {
+    max-width: 417px;
     grid-column: 1/2;
-    max-width: 417px; 
-   
+      
 }
 
 #yourPlaylist section {
@@ -203,22 +204,19 @@ dd {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 0.3rem;
-    margin-bottom: 0.5rem;
+    
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
     
 }
 
-.yourScroll {
-    background-color: var(--brightBlue);
-    grid-template-rows: repeat(5, 1fr);
-    padding: 0.9rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 471px; 
-}
 
 #curatedPlaylist {
+    max-width: 417px;
     grid-column: 2/3;
-    max-width: 417px;  
+      
 }
 
 #curatedPlaylist section {
@@ -227,16 +225,11 @@ dd {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 0.3rem;
-    margin-bottom: 0.5rem;
-
-}
-.curatedScroll {
-    background-color: var(--royalBlue);
-    grid-template-rows: repeat(5, 1fr);
-    padding: 0.9rem;
+    height: 500px;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 471px;
+    
+
 }
 
 
@@ -261,6 +254,11 @@ button {
 
 button:hover {
     background-color: var(--darkBlue);
+}
+
+#playlist button:hover {
+    background-color: var(--darkBlue);
+     
 }
 
 
